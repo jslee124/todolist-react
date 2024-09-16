@@ -21,10 +21,18 @@ function usePrevious(value) {
 
 
 function App(props) { 
-  const [tasks, setTasks] = useState(props.tasks);
-  
+  const [tasks, setTasks] = useState([]);
   const [filter, setFilter] = useState("All");
+  const [editCount, setEditCount] = useState(0);
   
+  useEffect(()=>{
+    fetch("http://localhost:8080/todo/all").then((res) => {
+      return res.json()
+    }).then((todos) => {
+      setTasks(todos);
+    })
+  }, [editCount])
+
   const taskList = tasks
   .filter(FILTER_MAP[filter])
   .map((task) => (
@@ -81,8 +89,12 @@ function App(props) {
   
 
   function addTask(name) {
-    const newTask = {id:`todo-${nanoid()}`, name, completed:false };
-    setTasks([...tasks, newTask]);
+    fetch("http://localhost:8080/todo/add?name=" + name + "&isCompleted=false", {method:"post"}).then(
+      (res) => {
+        console.log(res.text());
+        setEditCount(editCount + 1);
+      }
+    )
   }  
   
   const tasksNoun = taskList.length !== 1 ? "tasks" : "task";
