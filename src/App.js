@@ -70,8 +70,12 @@ function App(props) {
   }
 
   function deleteTask(id) {
-    const remainingTasks = tasks.filter((task) => id !== task.id);
-  setTasks(remainingTasks);
+    fetch("http://localhost:8080/todo/delete?id=" + id, {method:"post"}).then(
+      (res) => {
+        console.log(res.text());
+        setEditCount(editCount + 1);
+      }
+    )
   }
   
   function editTask(id, newName) {
