@@ -1,10 +1,18 @@
-# Getting Started with Create React App
+# Getting Started with Todo List
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Backend Repository
+
+You can find the backend repository [todolist-backend](https://github.com/jslee124/todolist-backend)
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Intall the dependencies you need to run the app.
 
 ### `npm start`
 
