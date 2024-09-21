@@ -6,6 +6,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 You can find the backend repository [todolist-backend](https://github.com/jslee124/todolist-backend)
 
+## Run the project
+
+**You should launch the backend program before you run the frontend code.**  
+Open a command line (or terminal) and navigate to the folder where you have the project files. We can build and run the application by issuing the following command:  
+```
+npm install
+``` 
+```
+npm start
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
