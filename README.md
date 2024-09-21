@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Backend Support
 
 The mysql branch is supported by a spring project with the feature of accessing mysql database.
-NOTICE: the main branch is a pure react frontend project with non backend support
+NOTICE: the main branch is a pure react frontend project with non backend support.
 You can find the backend repository [todolist-backend](https://github.com/jslee124/todolist-backend)
 
 ## Available Scripts
