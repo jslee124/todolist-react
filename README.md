@@ -2,10 +2,26 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## 运行项目
+
+打开终端并导航到项目文件夹所在位置，输入以下指令来获取项目运行所需依赖以及启动项目：
+```
+npm install
+```
+
+```
+npm start
+```
+
+## 后端支持
+`mysqlVer`分支由一个Spring项目提供支持，拥有将数据保存在MySQL数据库中的功能。  
+你可以在[todolist-backend](https://github.com/jslee124/todolist-backend)仓库中获取后端源代码。  
+**注意**：`main`分支将数据临时储存在内存中，当程序被中止时所有的数据将被清空。  
+
 ## Backend Support
 
-The `mysqlVer` branch is supported by a spring project with the feature of accessing mysql database.  
-NOTICE: the `main` branch is a pure react frontend project with non backend support.  
+The `mysqlVer` branch is supported by a Spring project with the feature of accessing MySQL database.  
+**NOTICE**: the `main` branch is a pure react frontend project with non backend support.  
 You can find the backend repository [todolist-backend](https://github.com/jslee124/todolist-backend).
 
 ## Available Scripts
