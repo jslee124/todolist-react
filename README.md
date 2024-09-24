@@ -2,6 +2,20 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## 后端仓库
+
+你可以访问[todolist-backend](https://github.com/jslee124/todolist-backend)来获取后端代码
+
+## 运行项目
+
+打开终端并导航到项目文件夹所在位置。使用以下指令来获取项目运行所需的依赖以及启动项目：
+```
+npm install
+``` 
+```
+npm start
+```
+
 ## Backend Repository
 
 You can find the backend repository [todolist-backend](https://github.com/jslee124/todolist-backend)
