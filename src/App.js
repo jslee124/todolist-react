@@ -2,7 +2,6 @@ import Todo from "./components/Todo";
 import Form from "./components/Form";
 import FilterButton from "./components/FilterButton";
 import { useState, useRef, useEffect } from "react";
-import { nanoid } from "nanoid";
 
 const FILTER_MAP = {
   All: () => true,
@@ -117,7 +116,6 @@ function App(props) {
       </h2>
 
       <ul
-        role = "list" 
         className="todo-list stack-large stack-exception"
         aria-labelledby="list-heading">
         {taskList}
